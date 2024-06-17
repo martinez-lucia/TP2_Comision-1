@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    }
+
+header, footer{
+    text-align: center;
+    background-image: url(../imagenes/fondo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+header{height: 290px; }
+
+footer{height: 90px; }
+
+h1{
+    font-family: "Quicksand";
+    font-weight: 700;
+    font-size: 40px;
+    color: #F278B1;
+}
+
+h2{
+    font-family: "Quicksand";
+    font-weight: 600;
+    font-size: 30px;
+    color: #F278B1;
+    
+    animation-name: ScrollH2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes ScrollH2{
+
+    0%{color: DarkSlateBlue; transform: TranslateY(-5px); }
+
+    100%{color: #F278B1; transform: TranslateY(15px); }
+}
+
+h3{
+    font-family: "Quicksand";
+    font-weight: 400;
+    font-size: 15px;
+    color: DarkSlateBlue;
+}
+
+#vinculo{
+    font-family: "Quicksand";
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+
+    display: block;
+    background-color: #F278B1;
+    color: PapayaWhip;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 5px;
+    display: inline-block;
+
+    transition-property: background-color, transform;
+    transition-duration: 1s;
+}
+
+#vinculo:hover{
+    color: #F278B1;
+    background-color: PapayaWhip;
+    border: 2px solid #F278B1;
+    transform: scale(1.1);
+}
+
+div { width: 45%; }
+    
+img { width: 100%; }
+
+video {width: 45%; }
+
+main{
+    width: 90%;
+    margin: auto; 
+    border:3px solid #E5C3C4;
+    
+    display: flex; /*sirve para encolumnar elementos*/
+    flex-wrap: wrap;
+    justify-content: space-between ; /*generar espacio entre los elementos*/  
+}
